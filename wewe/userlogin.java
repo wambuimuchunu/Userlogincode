@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class userlogin {
-   private static final String CORRECT_USERNAME = "username";
-   private static final String CORRECT_PASSWORD = "password123";
+    String CORRECT_USERNAME = "username";
+    String CORRECT_PASSWORD = "password123";
 
    public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class userlogin {
        }
 
        if (attempts == 0) {
-           System.out.println("Too many failed attempts. Access denied.");
+           System.out.println("Too many attempts. Access denied.");
        }
    }
 }
